@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        #img{
+            display: flex;
+            justify-content: center;
+            margin-top:30px;
+            margin-bottom: 10px;
+            gap: 50px;
+        }
+        img{
+            width: 200px;
+            border-radius: 50%;
+            border: 3px solid black;
+        }
+        img:hover{
+            cursor: pointer;
+            box-shadow:5px 5px rgba(7, 7, 7, 0.534); ;
+        }
+        #scoreone{
+            text-align: center;
+        }
+        #score{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           gap: 20px;
+        }
+        
+        #result{
+            display: flex;
+            justify-content: center;
+            background-color: rgb(26, 115, 115);
+            color: white;
+            text-align: center;
+            width:300px;
+            height: 50px;
+            border: 3px solid black;
+            margin-left: 600px;
+            border-radius: 20px;
+        }
+      
+    </style>
+</head>
+<body>
+    <div id="img">
+        <img id="rock" src="1.jpg"  alt="">
+        <img id="paper"src="2.jpg" alt="">
+        <img id="scissor" src="3.jpg" alt="">
+    </div>
+    <div id="result">
+        <p>Select  Your Move</p>
+    </div>
+    <h1 id="scoreone">Score</h1>
+    <div id="score">
+        <p>You <h3 id="pl1">0</h3></p>
+        <p>Computer <h3 id="pl2">0</h3></p>
+    </div>
+    <div id="newdiv" style="display: flex; justify-content: center; text-align: center; width: 300px; height: 50px; background-color: rgb(237, 213, 29); color: white; border-radius: 10px; margin-left: 600px;"><p>Let's Play</p></div>
+    <script src="script.js"></script>
+</body>
+</html>
